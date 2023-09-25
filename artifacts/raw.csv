@@ -1,0 +1,392 @@
+interest,value,skill,personality trait,career
+human welfare,empathy,communication,empathyate,social worker
+social social justice,social social justice,communication,patient,social worker
+community support,human dignity,assessment,resilient,social worker
+counseling,respect,communication,empathetic,social worker
+community support,community support,assessment,adaptable,social worker
+human welfare,empathy,communication,ethical,social worker
+social social justice,social social justice,communication,empathyate,social worker
+community support,human dignity,assessment,patient,social worker
+counseling,respect,communication,resilient,social worker
+community support,community support,assessment,empathetic,social worker
+human welfare,empathy,communication,adaptable,social worker
+social social justice,social social justice,communication,ethical,social worker
+community support,human dignity,assessment,empathyate,social worker
+counseling,respect,communication,patient,social worker
+community support,community support,assessment,resilient,social worker
+human welfare,empathy,communication,empathetic,social worker
+social social justice,social social justice,communication,adaptable,social worker
+community support,human dignity,assessment,ethical,social worker
+counseling,respect,communication,empathyate,social worker
+community support,community support,assessment,patient,social worker
+human welfare,empathy,communication,resilient,social worker
+social social justice,social social justice,communication,empathetic,social worker
+community support,human dignity,assessment,adaptable,social worker
+counseling,respect,communication,ethical,social worker
+community support,community support,assessment,empathyate,social worker
+human welfare,empathy,communication,patient,social worker
+social social justice,social social justice,communication,resilient,social worker
+community support,human dignity,assessment,empathetic,social worker
+counseling,respect,communication,adaptable,social worker
+community support,community support,assessment,ethical,social worker
+education,knowledge,communication,patient,teacher
+learning,empathy,classroom management,patient,teacher
+learning,patience,lesson planning,patient,teacher
+education,equality,assessment,patient,teacher
+education,respect,continuous improvement,patient,teacher
+education,knowledge,communication,inspiring,teacher
+learning,empathy,classroom management,inspiring,teacher
+learning,patience,lesson planning,inspiring,teacher
+education,equality,assessment,inspiring,teacher
+education,respect,continuous improvement,inspiring,teacher
+education,knowledge,communication,organised,teacher
+learning,empathy,classroom management,organised,teacher
+learning,patience,lesson planning,organised,teacher
+education,equality,assessment,organised,teacher
+education,respect,continuous improvement,organised,teacher
+education,knowledge,communication,compassionate,teacher
+learning,empathy,classroom management,compassionate,teacher
+learning,patience,lesson planning,compassionate,teacher
+education,equality,assessment,compassionate,teacher
+education,respect,continuous improvement,compassionate,teacher
+education,knowledge,communication,enthusiastic,teacher
+learning,empathy,classroom management,enthusiastic,teacher
+learning,patience,lesson planning,enthusiastic,teacher
+education,equality,assessment,enthusiastic,teacher
+education,respect,continuous improvement,enthusiastic,teacher
+human welfare,empathy,assessment,compassionate,nurse
+patient care,empathy,programming and software development,compassionate,nurse
+medicine,professionalism,communication,compassionate,nurse
+healing,ethics,emergency response,compassionate,nurse
+wellness,community support,patient education,compassionate,nurse
+human welfare,empathy,assessment,detail-oriented,nurse
+patient care,empathy,programming and software development,detail-oriented,nurse
+medicine,professionalism,communication,detail-oriented,nurse
+healing,ethics,emergency response,detail-oriented,nurse
+wellness,community support,patient education,detail-oriented,nurse
+human welfare,empathy,assessment,patient,nurse
+patient care,empathy,programming and software development,patient,nurse
+medicine,professionalism,communication,patient,nurse
+healing,ethics,emergency response,patient,nurse
+wellness,community support,patient education,patient,nurse
+human welfare,empathy,assessment,patient,nurse
+patient care,empathy,programming and software development,adaptable,nurse
+medicine,professionalism,communication,adaptable,nurse
+healing,ethics,emergency response,adaptable,nurse
+wellness,community support,patient education,adaptable,nurse
+human welfare,empathy,assessment,adaptable,nurse
+patient care,empathy,programming and software development,resilient,nurse
+medicine,professionalism,communication,resilient,nurse
+healing,ethics,emergency response,resilient,nurse
+wellness,community support,patient education,resilient,nurse
+law enforcement,respect,conflict resolution,disciplined,police officer
+public safety,courage,conflict resolution,disciplined,police officer
+crime prevention,respect,communication,disciplined,police officer
+social justice,social justice,conflict resolution,disciplined,police officer
+community protection,social justice,conflict resolution,disciplined,police officer
+law enforcement,respect,conflict resolution,brave,police officer
+public safety,courage,conflict resolution,brave,police officer
+crime prevention,respect,communication,brave,police officer
+social justice,social justice,conflict resolution,brave,police officer
+community protection,social justice,conflict resolution,brave,police officer
+law enforcement,respect,conflict resolution,detail-oriented,police officer
+public safety,courage,conflict resolution,detail-oriented,police officer
+crime prevention,respect,communication,detail-oriented,police officer
+social justice,social justice,conflict resolution,detail-oriented,police officer
+community protection,social justice,conflict resolution,detail-oriented,police officer
+law enforcement,respect,conflict resolution,empathetic,police officer
+public safety,courage,conflict resolution,empathetic,police officer
+crime prevention,respect,communication,empathetic,police officer
+social justice,social justice,conflict resolution,empathetic,police officer
+community protection,social justice,conflict resolution,empathetic,police officer
+law enforcement,respect,conflict resolution,resilient,police officer
+public safety,courage,conflict resolution,resilient,police officer
+crime prevention,respect,communication,resilient,police officer
+social justice,social justice,conflict resolution,resilient,police officer
+community protection,social justice,conflict resolution,resilient,police officer
+law enforcement,respect,conflict resolution,adaptable,police officer
+public safety,courage,conflict resolution,adaptable,police officer
+crime prevention,respect,communication,adaptable,police officer
+social justice,social justice,conflict resolution,adaptable,police officer
+community protection,social justice,conflict resolution,adaptable,police officer
+culinary arts,quality,culinary techniques,emotional resonanceal resonanceate,chef
+cooking,presentation,culinary techniques,emotional resonanceal resonanceate,chef
+food preparation,flavor,culinary techniques,emotional resonanceal resonanceate,chef
+cuisine,software development,culinary techniques,emotional resonanceal resonanceate,chef
+software development,sustainability,culinary techniques,emotional resonanceal resonanceate,chef
+culinary arts,quality,culinary techniques,creative,chef
+cooking,presentation,culinary techniques,creative,chef
+food preparation,flavor,culinary techniques,creative,chef
+cuisine,software development,culinary techniques,creative,chef
+software development,sustainability,culinary techniques,creative,chef
+culinary arts,quality,culinary techniques,detail-oriented,chef
+cooking,presentation,culinary techniques,detail-oriented,chef
+food preparation,flavor,culinary techniques,detail-oriented,chef
+cuisine,software development,culinary techniques,detail-oriented,chef
+software development,sustainability,culinary techniques,detail-oriented,chef
+culinary arts,quality,culinary techniques,adaptable,chef
+cooking,presentation,culinary techniques,adaptable,chef
+food preparation,flavor,culinary techniques,adaptable,chef
+cuisine,software development,culinary techniques,adaptable,chef
+software development,sustainability,culinary techniques,adaptable,chef
+culinary arts,quality,culinary techniques,collaborative,chef
+cooking,presentation,culinary techniques,collaborative,chef
+food preparation,flavor,culinary techniques,collaborative,chef
+cuisine,software development,culinary techniques,collaborative,chef
+software development,sustainability,culinary techniques,collaborative,chef
+culinary arts,quality,culinary techniques,stress-resistant,chef
+cooking,presentation,culinary techniques,stress-resistant,chef
+food preparation,flavor,culinary techniques,stress-resistant,chef
+cuisine,software development,culinary techniques,stress-resistant,chef
+software development,sustainability,culinary techniques,stress-resistant,chef
+creativity,self-self-expression,visual and fine arts,creative,artist
+software development,originality,visual and fine arts,creative,artist
+visual self-expression,beauty,visual and fine arts,creative,artist
+self-expression,emotional resonanceal resonance,visual and fine arts,creative,artist
+flavor,originality,visual and fine arts,creative,artist
+creativity,self-self-expression,visual and fine arts,creative,artist
+software development,originality,visual and fine arts,creative,artist
+visual self-expression,beauty,visual and fine arts,creative,artist
+self-expression,emotional resonanceal resonance,visual and fine arts,creative,artist
+flavor,originality,visual and fine arts,creative,artist
+creativity,self-self-expression,visual and fine arts,expressive,artist
+software development,originality,visual and fine arts,expressive,artist
+visual self-expression,beauty,visual and fine arts,expressive,artist
+self-expression,emotional resonanceal resonance,visual and fine arts,expressive,artist
+flavor,originality,visual and fine arts,expressive,artist
+creativity,self-self-expression,visual and fine arts,patient,artist
+software development,originality,visual and fine arts,patient,artist
+visual self-expression,beauty,visual and fine arts,patient,artist
+self-expression,emotional resonanceal resonance,visual and fine arts,patient,artist
+flavor,originality,visual and fine arts,patient,artist
+creativity,self-self-expression,visual and fine arts,open-minded,artist
+software development,originality,visual and fine arts,open-minded,artist
+visual self-expression,beauty,visual and fine arts,open-minded,artist
+self-expression,emotional resonanceal resonance,visual and fine arts,open-minded,artist
+flavor,originality,visual and fine arts,open-minded,artist
+creativity,self-self-expression,visual and fine arts,emotional resonanceal,artist
+software development,originality,visual and fine arts,emotional resonanceal,artist
+visual self-expression,beauty,visual and fine arts,emotional resonanceal,artist
+self-expression,emotional resonanceal resonance,visual and fine arts,emotional resonanceal,artist
+flavor,originality,visual and fine arts,emotional resonanceal,artist
+music,artistic self-expression,music,creative,musician
+music,emotional resonanceal resonance,music,creative,musician
+music,emotional resonance,music,creative,musician
+music,emotional resonance,music,creative,musician
+music,software development,music,creative,musician
+music,artistic self-expression,music,dedicated,musician
+music,emotional resonanceal resonance,music,dedicated,musician
+music,emotional resonance,music,dedicated,musician
+music,emotional resonance,music,dedicated,musician
+music,software development,music,dedicated,musician
+music,artistic self-expression,music,expressive,musician
+music,emotional resonanceal resonance,music,expressive,musician
+music,emotional resonance,music,expressive,musician
+music,emotional resonance,music,expressive,musician
+music,software development,music,expressive,musician
+music,artistic self-expression,music,disciplined,musician
+music,emotional resonanceal resonance,music,disciplined,musician
+music,emotional resonance,music,disciplined,musician
+music,emotional resonance,music,disciplined,musician
+music,software development,music,disciplined,musician
+music,artistic self-expression,music,collaborative,musician
+music,emotional resonanceal resonance,music,collaborative,musician
+music,emotional resonance,music,collaborative,musician
+music,emotional resonance,music,collaborative,musician
+music,software development,music,collaborative,musician
+music,artistic self-expression,music,patient,musician
+music,emotional resonanceal resonance,music,patient,musician
+music,emotional resonance,music,patient,musician
+music,emotional resonance,music,patient,musician
+music,software development,music,patient,musician
+music,artistic self-expression,music,patient,musician
+writing,self-expression,writing and editing,creative,writer
+writing,self-expression,writing and editing,creative,writer
+writing,presentation,writing and editing,creative,writer
+writing,originality,software development,creative,writer
+software development,communication,continuous improvement,creative,writer
+writing,self-expression,writing and editing,disciplined,writer
+writing,self-expression,writing and editing,disciplined,writer
+writing,presentation,writing and editing,disciplined,writer
+writing,originality,software development,disciplined,writer
+software development,communication,continuous improvement,disciplined,writer
+writing,self-expression,writing and editing,detail-oriented,writer
+writing,self-expression,writing and editing,detail-oriented,writer
+writing,presentation,writing and editing,detail-oriented,writer
+writing,originality,software development,detail-oriented,writer
+software development,communication,continuous improvement,detail-oriented,writer
+writing,self-expression,writing and editing,patient,writer
+writing,self-expression,writing and editing,patient,writer
+writing,presentation,writing and editing,patient,writer
+writing,originality,software development,patient,writer
+software development,communication,continuous improvement,patient,writer
+writing,self-expression,writing and editing,persistent,writer
+writing,self-expression,writing and editing,persistent,writer
+writing,presentation,writing and editing,persistent,writer
+writing,originality,software development,persistent,writer
+software development,communication,continuous improvement,persistent,writer
+writing,self-expression,writing and editing,curious,writer
+writing,self-expression,writing and editing,curious,writer
+writing,presentation,writing and editing,curious,writer
+writing,originality,software development,curious,writer
+software development,communication,continuous improvement,curious,writer
+acting,artistic self-expression,acting and performing arts,creative,actor
+acting,emotional resonance,acting and performing arts,creative,actor
+music,originality,acting and performing arts,creative,actor
+characters,writing,acting and performing arts,creative,actor
+acting,emotional resonance,acting and performing arts,creative,actor
+acting,artistic self-expression,acting and performing arts,adaptable,actor
+acting,emotional resonance,acting and performing arts,adaptable,actor
+music,originality,acting and performing arts,adaptable,actor
+characters,writing,acting and performing arts,adaptable,actor
+acting,emotional resonance,acting and performing arts,adaptable,actor
+acting,artistic self-expression,acting and performing arts,expressive,actor
+acting,emotional resonance,acting and performing arts,expressive,actor
+music,originality,acting and performing arts,expressive,actor
+characters,writing,acting and performing arts,expressive,actor
+acting,emotional resonance,acting and performing arts,expressive,actor
+acting,artistic self-expression,acting and performing arts,empathetic,actor
+acting,emotional resonance,acting and performing arts,empathetic,actor
+music,originality,acting and performing arts,empathetic,actor
+characters,writing,acting and performing arts,empathetic,actor
+acting,emotional resonance,acting and performing arts,empathetic,actor
+acting,artistic self-expression,acting and performing arts,resilient,actor
+acting,emotional resonance,acting and performing arts,resilient,actor
+music,originality,acting and performing arts,resilient,actor
+characters,writing,acting and performing arts,resilient,actor
+acting,emotional resonance,acting and performing arts,resilient,actor
+acting,artistic self-expression,acting and performing arts,inspiring,actor
+acting,emotional resonance,acting and performing arts,inspiring,actor
+music,originality,acting and performing arts,inspiring,actor
+characters,writing,acting and performing arts,inspiring,actor
+acting,emotional resonance,acting and performing arts,inspiring,actor
+photography,software development,photography and visual arts,creative,photographer
+visual writing,perspective,photography and visual arts,creative,photographer
+photography,flavor,music,creative,photographer
+music,originality,photography and visual arts,creative,photographer
+photography,sustainability,attention to detail,creative,photographer
+photography,software development,photography and visual arts,patient,photographer
+visual writing,perspective,photography and visual arts,patient,photographer
+photography,flavor,music,patient,photographer
+music,originality,photography and visual arts,patient,photographer
+photography,sustainability,attention to detail,patient,photographer
+photography,software development,photography and visual arts,detail-oriented,photographer
+visual writing,perspective,photography and visual arts,detail-oriented,photographer
+photography,flavor,music,detail-oriented,photographer
+music,originality,photography and visual arts,detail-oriented,photographer
+photography,sustainability,attention to detail,detail-oriented,photographer
+photography,software development,photography and visual arts,patient,photographer
+visual writing,perspective,photography and visual arts,patient,photographer
+photography,flavor,music,patient,photographer
+music,originality,photography and visual arts,patient,photographer
+photography,sustainability,attention to detail,patient,photographer
+photography,software development,photography and visual arts,expressive,photographer
+visual writing,perspective,photography and visual arts,expressive,photographer
+photography,flavor,music,expressive,photographer
+music,originality,photography and visual arts,expressive,photographer
+photography,sustainability,attention to detail,expressive,photographer
+photography,software development,photography and visual arts,detail-oriented,photographer
+visual writing,perspective,photography and visual arts,detail-oriented,photographer
+photography,flavor,music,detail-oriented,photographer
+music,originality,photography and visual arts,detail-oriented,photographer
+photography,sustainability,attention to detail,detail-oriented,photographer
+software development,efficiency,programming,analytical,software engineer
+software development,quality,programming and software development,analytical,software engineer
+software development,collaboration,programming and software development,analytical,software engineer
+problem-solving,efficiency,programming and software development,analytical,software engineer
+software development,quality,assessment,analytical,software engineer
+software development,efficiency,programming,detail-oriented,software engineer
+software development,quality,programming and software development,detail-oriented,software engineer
+software development,collaboration,programming and software development,detail-oriented,software engineer
+problem-solving,efficiency,programming and software development,detail-oriented,software engineer
+software development,quality,assessment,detail-oriented,software engineer
+software development,efficiency,programming,analytical,software engineer
+software development,quality,programming and software development,analytical,software engineer
+software development,collaboration,programming and software development,analytical,software engineer
+problem-solving,efficiency,programming and software development,analytical,software engineer
+software development,quality,assessment,analytical,software engineer
+software development,efficiency,programming,adaptable,software engineer
+software development,quality,programming and software development,adaptable,software engineer
+software development,collaboration,programming and software development,adaptable,software engineer
+problem-solving,efficiency,programming and software development,adaptable,software engineer
+software development,quality,assessment,adaptable,software engineer
+software development,efficiency,programming,collaborative,software engineer
+software development,quality,programming and software development,collaborative,software engineer
+software development,collaboration,programming and software development,collaborative,software engineer
+problem-solving,efficiency,programming and software development,collaborative,software engineer
+software development,quality,assessment,collaborative,software engineer
+data analysis,quality,programming and software development,analytical,data analyst
+data analysis,quality,programming and software development,analytical,data analyst
+data analysis,data respect,programming and software development,analytical,data analyst
+problem-solving,efficiency,programming,analytical,data analyst
+data analysis,efficiency,programming and software development,analytical,data analyst
+data analysis,quality,programming and software development,detail-oriented,data analyst
+data analysis,quality,programming and software development,detail-oriented,data analyst
+data analysis,data respect,programming and software development,detail-oriented,data analyst
+problem-solving,efficiency,programming,detail-oriented,data analyst
+data analysis,efficiency,programming and software development,detail-oriented,data analyst
+data analysis,quality,programming and software development,curious,data analyst
+data analysis,quality,programming and software development,curious,data analyst
+data analysis,data respect,programming and software development,curious,data analyst
+problem-solving,efficiency,programming,curious,data analyst
+data analysis,efficiency,programming and software development,curious,data analyst
+data analysis,quality,programming and software development,organized,data analyst
+data analysis,quality,programming and software development,organized,data analyst
+data analysis,data respect,programming and software development,organized,data analyst
+problem-solving,efficiency,programming,organized,data analyst
+data analysis,efficiency,programming and software development,organized,data analyst
+data analysis,quality,programming and software development,communication skill,data analyst
+data analysis,quality,programming and software development,communication skill,data analyst
+data analysis,data respect,programming and software development,communication skill,data analyst
+problem-solving,efficiency,programming,communication skill,data analyst
+data analysis,efficiency,programming and software development,communication skill,data analyst
+product development,customer-centricity,project management and strategy,leadership,product manager
+product development,customer-centricity,project management and strategy,leadership,product manager
+product development,continuous improvement,data analysis,leadership,product manager
+software development,collaboration,project management and strategy,leadership,product manager
+product development,continuous improvement,assessment,leadership,product manager
+product development,customer-centricity,project management and strategy,empathetic,product manager
+product development,customer-centricity,project management and strategy,empathetic,product manager
+product development,continuous improvement,data analysis,empathetic,product manager
+software development,collaboration,project management and strategy,empathetic,product manager
+product development,continuous improvement,assessment,empathetic,product manager
+product development,customer-centricity,project management and strategy,problem solver,product manager
+product development,customer-centricity,project management and strategy,problem solver,product manager
+product development,continuous improvement,data analysis,problem solver,product manager
+software development,collaboration,project management and strategy,problem solver,product manager
+product development,continuous improvement,assessment,problem solver,product manager
+product development,customer-centricity,project management and strategy,creative,product manager
+product development,customer-centricity,project management and strategy,creative,product manager
+product development,continuous improvement,data analysis,creative,product manager
+software development,collaboration,project management and strategy,creative,product manager
+product development,continuous improvement,assessment,creative,product manager
+product development,customer-centricity,project management and strategy,result-oriented,product manager
+product development,customer-centricity,project management and strategy,result-oriented,product manager
+product development,continuous improvement,data analysis,result-oriented,product manager
+software development,collaboration,project management and strategy,result-oriented,product manager
+product development,continuous improvement,assessment,result-oriented,product manager
+user interface design,user-centric,user experience design,creative,ui/ux designer
+user interface design,user-centric,user experience design,creative,ui/ux designer
+user interface design,flavor,user experience design,creative,ui/ux designer
+user interface design,consistency,user experience design,creative,ui/ux designer
+user interface design,user-centric,user experience design,creative,ui/ux designer
+user interface design,user-centric,user experience design,detail-oriented,ui/ux designer
+user interface design,user-centric,user experience design,detail-oriented,ui/ux designer
+user interface design,flavor,user experience design,detail-oriented,ui/ux designer
+user interface design,consistency,user experience design,detail-oriented,ui/ux designer
+user interface design,user-centric,user experience design,detail-oriented,ui/ux designer
+user interface design,user-centric,user experience design,empathetic,ui/ux designer
+user interface design,user-centric,user experience design,empathetic,ui/ux designer
+user interface design,flavor,user experience design,empathetic,ui/ux designer
+user interface design,consistency,user experience design,empathetic,ui/ux designer
+user interface design,user-centric,user experience design,empathetic,ui/ux designer
+user interface design,user-centric,user experience design,collaborative,ui/ux designer
+user interface design,user-centric,user experience design,collaborative,ui/ux designer
+user interface design,flavor,user experience design,collaborative,ui/ux designer
+user interface design,consistency,user experience design,collaborative,ui/ux designer
+user interface design,user-centric,user experience design,collaborative,ui/ux designer
+user interface design,user-centric,user experience design,problem-solver,ui/ux designer
+user interface design,user-centric,user experience design,problem-solver,ui/ux designer
+user interface design,flavor,user experience design,problem-solver,ui/ux designer
+user interface design,consistency,user experience design,problem-solver,ui/ux designer
+user interface design,user-centric,user experience design,problem-solver,ui/ux designer

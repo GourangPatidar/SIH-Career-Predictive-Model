@@ -1,0 +1,23 @@
+[ 2023-09-25 14:32:17,526 ] 23 root - INFO - Data Ingestion methods Starts
+[ 2023-09-25 14:32:18,704 ] 27 root - INFO - Dataset read as pandas Dataframe
+[ 2023-09-25 14:32:18,719 ] 33 root - INFO - Train test split
+[ 2023-09-25 14:32:18,736 ] 44 root - INFO - Ingestion of Data is completed
+[ 2023-09-25 14:32:18,785 ] 182 root - INFO - Read train and test data completed
+[ 2023-09-25 14:32:18,793 ] 183 root - INFO - Train Dataframe Head : 
+               interest                     value                                 skill personality trait             career
+0     community support         community support                            assessment        empathyate      social worker
+1                 music  artistic self-expression                                 music         dedicated           musician
+2   product development       customer-centricity       project management and strategy        leadership    product manager
+3            creativity      self-self-expression                  visual and fine arts          creative             artist
+4  software development             collaboration  programming and software development   detail-oriented  software engineer
+[ 2023-09-25 14:32:18,803 ] 185 root - INFO - Test Dataframe Head  : 
+                interest              value                                 skill personality trait             career
+0      community support  community support                            assessment        empathetic      social worker
+1               learning           patience                       lesson planning         organised            teacher
+2              education           equality                            assessment           patient            teacher
+3   software development            quality  programming and software development     collaborative  software engineer
+4  user interface design       user-centric                user experience design          creative     ui/ux designer
+[ 2023-09-25 14:32:18,803 ] 188 root - INFO - Obtaining preprocessing object
+[ 2023-09-25 14:32:18,803 ] 27 root - INFO - data transformation initiated
+[ 2023-09-25 14:32:18,833 ] 217 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2023-09-25 14:32:18,837 ] 231 root - INFO - Preprocessor pickle file saved
