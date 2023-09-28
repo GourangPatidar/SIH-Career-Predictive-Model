@@ -27,7 +27,7 @@ class DataTransformation:
             logging.info("data transformation initiated")
             
             categorical_columns = ['interest',
-                                   'value', 'skill', 'personality trait']
+                                   'value', 'skill', 'personality']
 
             interest_categories = ['software development',
                                    'music',
@@ -118,7 +118,7 @@ class DataTransformation:
                                 'classroom management',
                                 'data analysis',
                                 'attention to detail']
-            personality_trait_categories = ['detail-oriented',
+            personality_categories = ['detail-oriented',
                                             'creative',
                                             'patient',
                                             'adaptable',
@@ -155,7 +155,7 @@ class DataTransformation:
             cat_pipeline = Pipeline(
                 steps=[
                     ('OneHotencoder', OneHotEncoder(categories=[
-                        interest_categories, value_categories, skill_categories, personality_trait_categories])),
+                        interest_categories, value_categories, skill_categories, personality_categories])),
 
                 ]
 

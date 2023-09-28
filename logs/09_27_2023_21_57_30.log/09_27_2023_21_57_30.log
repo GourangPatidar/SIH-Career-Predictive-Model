@@ -1,0 +1,100 @@
+[ 2023-09-27 21:57:34,286 ] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.225:5000
+[ 2023-09-27 21:57:34,287 ] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-09-27 21:58:39,061 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:58:39] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 21:58:54,630 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:58:54] "GET / HTTP/1.1" 200 -
+[ 2023-09-27 21:58:59,488 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:58:59] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 21:59:14,208 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:59:14] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 21:59:20,741 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:59:20] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 21:59:21,914 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 21:59:22,725 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 21:59:22,725 ] 1741 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\utils.py", line 52, in load_object
+    return pickle.load(file_obj)
+  File "sklearn\tree\_tree.pyx", line 692, in sklearn.tree._tree.Tree.__setstate__
+  File "sklearn\tree\_tree.pyx", line 1379, in sklearn.tree._tree._check_node_ndarray
+ValueError: node array from the pickle has an incompatible dtype:
+- expected: [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+- got     : {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 16, in predict
+    model = load_object(model_path)
+  File "E:\SIH Predictive model\src\utils.py", line 55, in load_object
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\utils.py] line number [52] error message [node array from the pickle has an incompatible dtype:
+- expected: [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+- got     : {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\SIH Predictive model\application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [16] error message [Error occured in python script name [E:\SIH Predictive model\src\utils.py] line number [52] error message [node array from the pickle has an incompatible dtype:
+- expected: [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+- got     : {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}]]
+[ 2023-09-27 21:59:22,729 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:59:22] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 21:59:43,057 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:59:43] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 21:59:54,228 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 21:59:54,230 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 21:59:54,230 ] 1741 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\utils.py", line 52, in load_object
+    return pickle.load(file_obj)
+  File "sklearn\tree\_tree.pyx", line 692, in sklearn.tree._tree.Tree.__setstate__
+  File "sklearn\tree\_tree.pyx", line 1379, in sklearn.tree._tree._check_node_ndarray
+ValueError: node array from the pickle has an incompatible dtype:
+- expected: [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+- got     : {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 16, in predict
+    model = load_object(model_path)
+  File "E:\SIH Predictive model\src\utils.py", line 55, in load_object
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\utils.py] line number [52] error message [node array from the pickle has an incompatible dtype:
+- expected: [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+- got     : {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\SIH Predictive model\application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [16] error message [Error occured in python script name [E:\SIH Predictive model\src\utils.py] line number [52] error message [node array from the pickle has an incompatible dtype:
+- expected: [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+- got     : {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}]]
+[ 2023-09-27 21:59:54,233 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:59:54] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 22:00:05,319 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 22:00:05] "GET / HTTP/1.1" 200 -
+[ 2023-09-27 22:00:15,831 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 22:00:15] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 22:01:30,958 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 22:01:30] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 22:01:37,675 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 22:01:37] "GET / HTTP/1.1" 200 -
+[ 2023-09-27 22:01:48,778 ] 224 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 22:01:48] "GET /predict HTTP/1.1" 200 -

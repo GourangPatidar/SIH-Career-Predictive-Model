@@ -1,11 +1,11 @@
 import numpy as np
 import pandas as pd
-
 from src.exception import CustomException
 from src.logger import logging
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.preprocessing import OneHotEncoder
 from src.utils import save_object
-from src.utils import evaluate_model
 
 from dataclasses import dataclass
 import sys
@@ -32,41 +32,30 @@ class ModelTrainer:
                 test_array[:, -1]
             )
 
-            models = {
-                
-                'DecisionTree': DecisionTreeClassifier(),
-                
+            # Create an instance of the OneHotEncoder
+            one_hot_encoder = OneHotEncoder()
 
-            }
+            # Fit and transform the encoder on the categorical columns
+            X_train_encoded = one_hot_encoder.fit_transform(X_train)
+            X_test_encoded = one_hot_encoder.transform(X_test)
 
-            model_report: dict = evaluate_model(
-                X_train, y_train, X_test, y_test, models)
-            print(model_report)
-            print(
-                '\n====================================================================================\n')
-            logging.info(f'Model Report : {model_report}')
+            # Define your model (e.g., Decision Tree)
+            model = DecisionTreeClassifier()
 
-            # To get best model score from dictionary
-            best_model_score = max(sorted(model_report.values()))
+            # Train the model
+            model.fit(X_train_encoded, y_train)
 
-            best_model_name = list(model_report.keys())[
-                list(model_report.values()).index(best_model_score)
-            ]
+            # Evaluate the model
+            score = model.score(X_test_encoded, y_test)
 
-            best_model = models[best_model_name]
+            print(f'Model Score: {score}')
 
-            print(
-                f'Best Model Found , Model Name : {best_model_name} , R2 Score : {best_model_score}')
-            print(
-                '\n====================================================================================\n')
-            logging.info(
-                f'Best Model Found , Model Name : {best_model_name} , R2 Score : {best_model_score}')
-
+            # Save the trained model
             save_object(
                 file_path=self.model_trainer_config.trained_model_file_path,
-                obj=best_model
+                obj=model
             )
 
         except Exception as e:
-            logging.info('Exception occured at Model Training')
+            logging.info('Exception occurred at Model Training')
             raise CustomException(e, sys)

@@ -1,0 +1,109 @@
+<html>
+<body>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+       
+    }
+    
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    select {
+        height: 36px;
+    }
+
+    input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+  
+<h1 style="text-align: center;">Welcome to the Insurance Premium predector</h1>
+<h6 style="text-align: center;" >by:Gourang Patidar </h6>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    
+  
+
+
+<div class="form-group">
+  <label for="interest">interest:</label>
+  <select id="interest" name="interest">
+    <option value="software development">software development</option>
+    <option value="music">music</option>
+    <option value="writing">writing</option>
+    <option value="education">education</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="value">value:</label>
+  <select id="value" name="value">
+    <option value="originality">originality</option>
+    <option value="respect">respect</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="skill">skill:</label>
+  <select id="skill" name="skill">
+    <option value="communication">communication</option>
+    <option value="assessment">assessment</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="personality">personality:</label>
+  <select id="personality" name="personality">
+    <option value="creative">creative</option>
+    <option value="patient">patient</option>
+  </select>
+</div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>

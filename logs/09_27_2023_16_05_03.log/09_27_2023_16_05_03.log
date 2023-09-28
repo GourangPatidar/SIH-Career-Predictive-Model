@@ -1,0 +1,183 @@
+[ 2023-09-27 16:05:06,342 ] 187 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.225:5000
+[ 2023-09-27 16:05:06,343 ] 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-09-27 16:05:14,632 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:05:14] "GET / HTTP/1.1" 200 -
+[ 2023-09-27 16:05:21,479 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:05:21] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 16:05:22,509 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 16:05:22,961 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 16:05:22,961 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 21, in predict
+    pred = model.predict(data_scaled)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 710, in predict
+    pred = self.decision_function(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 771, in decision_function
+    X = self._check_X(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 101, in _check_X
+    return self._validate_data(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 626, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 415, in _check_n_features
+    raise ValueError(
+ValueError: X has 119 features, but AdaBoostClassifier is expecting 117 features as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [21] error message [X has 119 features, but AdaBoostClassifier is expecting 117 features as input.]
+[ 2023-09-27 16:05:23,013 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:05:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 16:05:41,152 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 16:05:41,162 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 16:05:41,162 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 21, in predict
+    pred = model.predict(data_scaled)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 710, in predict
+    pred = self.decision_function(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 771, in decision_function
+    X = self._check_X(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 101, in _check_X
+    return self._validate_data(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 626, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 415, in _check_n_features
+    raise ValueError(
+ValueError: X has 119 features, but AdaBoostClassifier is expecting 117 features as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [21] error message [X has 119 features, but AdaBoostClassifier is expecting 117 features as input.]
+[ 2023-09-27 16:05:41,163 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:05:41] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 16:05:46,582 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 16:05:46,592 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 16:05:46,593 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 21, in predict
+    pred = model.predict(data_scaled)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 710, in predict
+    pred = self.decision_function(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 771, in decision_function
+    X = self._check_X(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 101, in _check_X
+    return self._validate_data(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 626, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 415, in _check_n_features
+    raise ValueError(
+ValueError: X has 119 features, but AdaBoostClassifier is expecting 117 features as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [21] error message [X has 119 features, but AdaBoostClassifier is expecting 117 features as input.]
+[ 2023-09-27 16:05:46,594 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:05:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 16:23:14,601 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 16:23:14,611 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 16:23:14,612 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 21, in predict
+    pred = model.predict(data_scaled)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 710, in predict
+    pred = self.decision_function(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 771, in decision_function
+    X = self._check_X(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\ensemble\_weight_boosting.py", line 101, in _check_X
+    return self._validate_data(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 626, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 415, in _check_n_features
+    raise ValueError(
+ValueError: X has 119 features, but AdaBoostClassifier is expecting 117 features as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [21] error message [X has 119 features, but AdaBoostClassifier is expecting 117 features as input.]
+[ 2023-09-27 16:23:14,624 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:23:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 16:31:51,424 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:31:51] "GET / HTTP/1.1" 200 -
+[ 2023-09-27 16:31:58,207 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:31:58] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 16:31:59,111 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 16:31:59,140 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 16:31:59,141 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 21, in predict
+    pred = model.predict(data_scaled)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\tree\_classes.py", line 500, in predict
+    X = self._validate_X_predict(X, check_input)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\tree\_classes.py", line 460, in _validate_X_predict
+    X = self._validate_data(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 626, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 415, in _check_n_features
+    raise ValueError(
+ValueError: X has 119 features, but DecisionTreeClassifier is expecting 117 features as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [21] error message [X has 119 features, but DecisionTreeClassifier is expecting 117 features as input.]
+[ 2023-09-27 16:31:59,167 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:31:59] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 16:38:11,048 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 16:38:11] "GET /predict HTTP/1.1" 200 -

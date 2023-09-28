@@ -1,0 +1,264 @@
+[ 2023-09-27 21:14:52,322 ] 187 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.225:5000
+[ 2023-09-27 21:14:52,322 ] 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-09-27 21:14:52,334 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:14:52] "GET / HTTP/1.1" 200 -
+[ 2023-09-27 21:14:52,801 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:14:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-09-27 21:14:56,748 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:14:56] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 21:15:01,238 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 21:15:01,948 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 21:15:01,948 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 21, in predict
+    pred = model.predict(data_scaled)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\tree\_classes.py", line 500, in predict
+    X = self._validate_X_predict(X, check_input)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\tree\_classes.py", line 460, in _validate_X_predict
+    X = self._validate_data(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 626, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 415, in _check_n_features
+    raise ValueError(
+ValueError: X has 119 features, but DecisionTreeClassifier is expecting 117 features as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [21] error message [X has 119 features, but DecisionTreeClassifier is expecting 117 features as input.]
+[ 2023-09-27 21:15:01,996 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:15:01] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 21:17:05,528 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 21:17:05,537 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 21:17:05,538 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 21, in predict
+    pred = model.predict(data_scaled)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\tree\_classes.py", line 500, in predict
+    X = self._validate_X_predict(X, check_input)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\tree\_classes.py", line 460, in _validate_X_predict
+    X = self._validate_data(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 626, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 415, in _check_n_features
+    raise ValueError(
+ValueError: X has 119 features, but DecisionTreeClassifier is expecting 117 features as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [21] error message [X has 119 features, but DecisionTreeClassifier is expecting 117 features as input.]
+[ 2023-09-27 21:17:05,540 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:17:05] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 21:21:05,347 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:21:05] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+[ 2023-09-27 21:43:01,775 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:43:01] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 21:46:30,263 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 21:46:30,324 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 21:46:30,324 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 19, in predict
+    data_scaled = preprocessor.transform(features)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\compose\_column_transformer.py", line 827, in transform
+    Xs = self._fit_transform(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\compose\_column_transformer.py", line 681, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\parallel.py", line 65, in __call__
+    return super().__call__(iterable_with_config)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\joblib\parallel.py", line 1863, in __call__
+    return output if self.return_generator else list(output)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\joblib\parallel.py", line 1792, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\parallel.py", line 127, in __call__
+    return self.function(*args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\pipeline.py", line 940, in _transform_one
+    res = transformer.transform(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\pipeline.py", line 696, in transform
+    Xt = transform.transform(Xt)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\preprocessing\_encoders.py", line 1027, in transform
+    X_int, X_mask = self._transform(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\preprocessing\_encoders.py", line 200, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories [None] in column 0 during transform
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [19] error message [Found unknown categories [None] in column 0 during transform]
+[ 2023-09-27 21:46:30,546 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:46:30] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 21:46:46,968 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:46:46] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+[ 2023-09-27 21:47:20,712 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:47:20] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+[ 2023-09-27 21:47:22,465 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:47:22] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+[ 2023-09-27 21:47:31,129 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 21:47:31,140 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 21:47:31,140 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 19, in predict
+    data_scaled = preprocessor.transform(features)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\compose\_column_transformer.py", line 827, in transform
+    Xs = self._fit_transform(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\compose\_column_transformer.py", line 681, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\parallel.py", line 65, in __call__
+    return super().__call__(iterable_with_config)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\joblib\parallel.py", line 1863, in __call__
+    return output if self.return_generator else list(output)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\joblib\parallel.py", line 1792, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\parallel.py", line 127, in __call__
+    return self.function(*args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\pipeline.py", line 940, in _transform_one
+    res = transformer.transform(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\pipeline.py", line 696, in transform
+    Xt = transform.transform(Xt)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\preprocessing\_encoders.py", line 1027, in transform
+    X_int, X_mask = self._transform(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\preprocessing\_encoders.py", line 200, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories [None] in column 0 during transform
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [19] error message [Found unknown categories [None] in column 0 during transform]
+[ 2023-09-27 21:47:31,142 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:47:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 21:47:38,176 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:47:38] "GET /predict HTTP/1.1" 200 -
+[ 2023-09-27 21:47:39,273 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 21:47:39,286 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 21:47:39,288 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 21, in predict
+    pred = model.predict(data_scaled)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\tree\_classes.py", line 500, in predict
+    X = self._validate_X_predict(X, check_input)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\tree\_classes.py", line 460, in _validate_X_predict
+    X = self._validate_data(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 626, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\base.py", line 415, in _check_n_features
+    raise ValueError(
+ValueError: X has 119 features, but DecisionTreeClassifier is expecting 117 features as input.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [21] error message [X has 119 features, but DecisionTreeClassifier is expecting 117 features as input.]
+[ 2023-09-27 21:47:39,290 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:47:39] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 21:48:07,404 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:48:07] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+[ 2023-09-27 21:51:14,713 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:51:14] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+[ 2023-09-27 21:51:28,327 ] 45 root - INFO - Dataframe Gathered
+[ 2023-09-27 21:51:28,337 ] 25 root - INFO - Exception occurred in prediction
+[ 2023-09-27 21:51:28,337 ] 1414 application - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 19, in predict
+    data_scaled = preprocessor.transform(features)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\compose\_column_transformer.py", line 827, in transform
+    Xs = self._fit_transform(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\compose\_column_transformer.py", line 681, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\parallel.py", line 65, in __call__
+    return super().__call__(iterable_with_config)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\joblib\parallel.py", line 1863, in __call__
+    return output if self.return_generator else list(output)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\joblib\parallel.py", line 1792, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\parallel.py", line 127, in __call__
+    return self.function(*args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\pipeline.py", line 940, in _transform_one
+    res = transformer.transform(X)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\pipeline.py", line 696, in transform
+    Xt = transform.transform(Xt)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\utils\_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\preprocessing\_encoders.py", line 1027, in transform
+    X_int, X_mask = self._transform(
+  File "E:\SIH Predictive model\venv1\lib\site-packages\sklearn\preprocessing\_encoders.py", line 200, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories [None] in column 0 during transform
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\SIH Predictive model\venv1\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 30, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\SIH Predictive model\src\pipeline\prediction_pipeline.py", line 26, in predict
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name [E:\SIH Predictive model\src\pipeline\prediction_pipeline.py] line number [19] error message [Found unknown categories [None] in column 0 during transform]
+[ 2023-09-27 21:51:28,340 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:51:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-09-27 21:52:00,291 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:52:00] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+[ 2023-09-27 21:52:35,167 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Sep/2023 21:52:35] "[31m[1mPOST / HTTP/1.1[0m" 405 -
