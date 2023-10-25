@@ -18,7 +18,7 @@ def predict_datapoint():
 
     else:
         data = CustomData(
-            
+
             interest=request.form.get('interest'),
             value=request.form.get('value'),
             skill=request.form.get('skill'),
@@ -29,10 +29,10 @@ def predict_datapoint():
         predict_pipeline = PredictPipeline()
         pred = predict_pipeline.predict(final_new_data)
 
-        results=pred[0]
+        results = pred[0]
 
         return render_template('results.html', final_result=results)
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0' , debug=True)
+    app.run(host='0.0.0.0', debug=True)
