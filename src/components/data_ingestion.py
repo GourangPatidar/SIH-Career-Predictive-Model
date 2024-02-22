@@ -22,8 +22,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info('Data Ingestion methods Starts')
         try:
-            df = pd.read_excel(os.path.join('notebooks/data',
-                                            'data - Copy.xlsx'))
+            df = pd.read_excel(os.path.join('notebooks/data/data - Copy.xlsx'))
             logging.info('Dataset read as pandas Dataframe')
 
             os.makedirs(os.path.dirname(
